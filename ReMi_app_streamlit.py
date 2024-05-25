@@ -1,43 +1,20 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from mistral_call import filter_shopping_list
+from mistral_call import filter_shopping_list, create_csv
 
 st.set_page_config(layout="centered")
 
 st.title('ReMi - Recipe Mistral')
 
+input_list = st.text_area(
+    "Insert your list here! 🐭",
+    )
 
-
-data_df = pd.DataFrame(
-    {
-        "To buy": ["potatoes", "eggs", "eggs", "яйца"],
-        "Amount": [3, 12, 2, 1],
-        "Unit": ["kg", "pieces", "counts", "packs"],
-        "Done": [False, False, False, False]
-    }
-)
+data_df = create_csv(input_list)
 
 if 'data_df' not in st.session_state:
     st.session_state['data_df'] = data_df
-
-input_list = st.text_area(
-    "Insert your list here! 🐭",
-    """✓ рыба
-    ✓ листы для шаурмы или листья салата
-    ✓ сухарики
-    ✓ фрукты для салата и на десерт 
-    ✓ авокадо для завтрака
-    ✓ 350 g d' oignon
-    ✓ авокадо 
-    ✓ огурец
-    ✓ 350 g de poivron de couleur rouge et vert
-    ✓ 350 g de courgette
-    ✓ 500 g de tomate bien mûres
-    """
-    )
-
-
 
 if 'clicked' not in st.session_state:
     st.session_state.clicked = False
@@ -59,10 +36,8 @@ data_df = st.data_editor(data_df,
             default=False,
         )
     },
-    disabled=["To buy", "Amount", "Unit"],
+    disabled=["Item", "Amount", "Unit"],
     hide_index=True,
     num_rows="dynamic",
     #on_change=update,
 )
-
-data_df
