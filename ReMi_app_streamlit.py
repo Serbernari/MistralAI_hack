@@ -64,8 +64,8 @@ with col2:
 with col3:
     if not submit_button and st.session_state.clicked_organize == 0:
         st.image('remi_question.png', width = 350)
-    if submit_button or st.session_state.clicked_organize == 0:
-        st.image('remi_happy.png', width = 350)
+    elif submit_button and st.session_state.clicked_organize == 0:
+        st.image('remi_happy.png', width = 355)
         print(st.session_state.clicked_organize)
-    else:
+    elif submit_button or st.session_state.clicked_organize >= 1:
         st.image('remi_super.png', width = 340)
