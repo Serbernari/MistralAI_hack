@@ -3,6 +3,7 @@ from mistralai.models.chat_completion import ChatMessage
 import streamlit as st
 from io import StringIO
 import pandas as pd
+import concurrent
 
 api_key = "dnDSPYh1mNwZyGRSQgjCPKQc144MfMng"
 model = "mistral-large-latest"
@@ -70,23 +71,48 @@ def get_mistral_convert_units(item):
     
     return res3
 
-@st.cache_data
-def filter_shopping_list(data_df):
+
+#step 1
+def mistral_compare(text):
+    chat_response = client.chat(
+    model=model,
+    messages=[ChatMessage(role="system", content='You will be asked questions about items to determine if they are the same name for a product inside grocery store. Specifically, you will need to assess if item_A and item_B are the same in terms of being found in the same section or location within the store. For example, "картошка" and "картофелина" should be considered the same since they can be bought in the same place, and you should answer "yes". Please answer with "yes" or "no"'),
+                ChatMessage(role="user", content=f'{text}')]
+    )
+    res1 = chat_response.choices[0].message.content
+    return res1
+
+
+def mistral_compare_items(data_df):
+    input_list = []
+    for i in data_df.index:
+        for j in data_df.index:
+            input_list.append((data_df.loc[i, 'Item'], data_df.loc[j, 'Item']))
+            
+    texts = []
+    for pair in input_list:
+        texts.append(f'Are "{pair[0]}" and "{pair[1]}" the same?')
+        
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(texts)) as pool:
+        results = pool.map(mistral_compare, texts)
+    text_results = list(results)    
+            
+            
     for i in data_df.index:
         for j in data_df.index:
             if i != j and data_df.loc[i, 'Item'] is not None and data_df.loc[j, 'Item'] is not None:
                 if data_df.loc[i, 'Item'].lower() == data_df.loc[j, 'Item'].lower():
                     data_df.loc[i,'Amount'] += data_df.loc[j,'Amount']
                     data_df.loc[j, 'Item'] = None
-                else:
-                    try:
-                        if get_mistral_compare_items(data_df.loc[i, 'Item'], data_df.loc[j, 'Item']) == True:
-                            data_df.loc[i,'Amount'] += data_df.loc[j,'Amount']
-                            data_df.loc[j, 'Item'] = None
-                    except Exception as e:
-                        print(e)
-    data_df = data_df.dropna(subset='Item')
-    return data_df
+                else:            
+                    if text_results[i*len(data_df) + j].lower().startswith('yes') == True:
+                        data_df.loc[i,'Amount'] += data_df.loc[j,'Amount']
+                        data_df.loc[j, 'Item'] = None
+                    elif text_results[i*len(data_df) + j].lower().startswith('no') == True:
+                        pass
+                    else:
+                        raise Exception("Mistral was unable to answer 'yes' or 'no'")
+    return data_df.dropna(subset='Item')
     
 def mistral_create_csv(input):
     """
@@ -105,4 +131,5 @@ def create_csv(input):
     df = pd.read_csv(string_data)
     df['Amount'] = df['Amount'].fillna(value=1)
     df['Unit'] = df['Unit'].fillna(value="pcs")
+    df["Done"] = False
     return df
