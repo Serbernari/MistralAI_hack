@@ -42,7 +42,7 @@ prev_key = f"data.{generation-1}"
 if prev_key in st.session_state:
     pass
 try:
-    st.session_state['data_df'] = st.data_editor(st.session_state['data_df'],
+    shown_df = st.data_editor(st.session_state['data_df'],
         column_config={
             "Done": st.column_config.CheckboxColumn( #favorite?
                 "Done",
