@@ -1,0 +1,421 @@
+elem,category,category_encoded,split
+agneau,"Boucherie, volaille, poissonnerie",4,test
+agrumes,"Fruits, légumes",5,train
+aides culinaires,Epicerie salée,6,test
+aides à la pâtisserie,Epicerie sucrée,7,test
+ails,"Fruits, légumes",5,train
+anchois,"Boucherie, volaille, poissonnerie",4,train
+aromatisées,"Vins, bières, alcools",8,train
+assortiments,Epicerie sucrée,7,train
+aubergines,"Fruits, légumes",5,train
+autres confiseries,Epicerie sucrée,7,train
+autres coquillages,"Boucherie, volaille, poissonnerie",4,train
+autres spécialités du monde,Epicerie salée,6,train
+autres volailles,"Boucherie, volaille, poissonnerie",4,train
+avocats,"Fruits, légumes",5,train
+bacon,"Charcuterie, traiteur",9,train
+bacs,Surgelés,10,test
+bags in box,"Vins, bières, alcools",8,train
+bananes,"Fruits, légumes",5,train
+barbecue,"Boucherie, volaille, poissonnerie",4,train
+barres,Epicerie sucrée,7,train
+barres de céréales,Epicerie sucrée,7,train
+barres et glaces enfants,Surgelés,10,test
+betteraves,"Fruits, légumes",5,train
+beurres,"Produits laitiers, oeufs, fromages",11,train
+bien-être,"Produits laitiers, oeufs, fromages",11,train
+biscottes,Epicerie sucrée,7,train
+biscuits,Epicerie sucrée,7,train
+biscuits fins,Epicerie sucrée,7,train
+biscuits petit déjeuner,Epicerie sucrée,7,train
+biscuits salés,Epicerie salée,6,train
+biscuits secs,Epicerie sucrée,7,train
+bières ambrées,"Vins, bières, alcools",8,train
+bières blanches,"Vins, bières, alcools",8,train
+bières blondes,"Vins, bières, alcools",8,train
+bières sans alcool,"Vins, bières, alcools",8,train
+bleu,"Produits laitiers, oeufs, fromages",11,test
+blinis,"Charcuterie, traiteur",9,train
+bloc,"Produits laitiers, oeufs, fromages",11,train
+blés,Epicerie salée,6,train
+boeuf,"Boucherie, volaille, poissonnerie",4,train
+boissons,"Charcuterie, traiteur",9,train
+boissons gazeuses aux fruits,"Eaux, jus, soda, thés glacés",12,train
+boissons gazeuses petits formats,"Eaux, jus, soda, thés glacés",12,train
+boissons plates aux fruits,"Eaux, jus, soda, thés glacés",12,test
+boissons plates petits format,"Eaux, jus, soda, thés glacés",12,train
+boissons rafraîchissantes,"Fruits, légumes",5,train
+boissons végétales,"Produits laitiers, oeufs, fromages",11,train
+boissons énergisantes,"Eaux, jus, soda, thés glacés",12,train
+bonbons,Epicerie sucrée,7,test
+boucherie à la coupe,"Boucherie, volaille, poissonnerie",4,train
+bouchées,"Charcuterie, traiteur",9,test
+bouillons,Epicerie salée,6,test
+boulettes,Surgelés,10,train
+box de pâtes,"Charcuterie, traiteur",9,test
+brebis,"Produits laitiers, oeufs, fromages",11,test
+brie,"Produits laitiers, oeufs, fromages",11,test
+brioches,Epicerie sucrée,7,train
+brownies,Epicerie sucrée,7,test
+brunes,"Vins, bières, alcools",8,test
+burgers,"Boucherie, volaille, poissonnerie",4,train
+bâtonnets,"Boucherie, volaille, poissonnerie",4,test
+cacahuètes,Epicerie salée,6,train
+café en grains,Epicerie sucrée,7,train
+café moulu,Epicerie sucrée,7,test
+café soluble,Epicerie sucrée,7,train
+cake nature,Epicerie sucrée,7,train
+cakes,"Charcuterie, traiteur",9,train
+camembert,"Produits laitiers, oeufs, fromages",11,train
+canard,"Boucherie, volaille, poissonnerie",4,train
+cappuccino,Epicerie sucrée,7,train
+capsules autres machines,Epicerie sucrée,7,train
+capsules compatibles nespresso,Epicerie sucrée,7,train
+capsules dolce gusto et dosettes tassimo,Epicerie sucrée,7,train
+carottes,"Fruits, légumes",5,test
+cava,"Vins, bières, alcools",8,train
+cave à bières,"Vins, bières, alcools",8,train
+chair à saucisses,"Boucherie, volaille, poissonnerie",4,test
+champagne brut,"Vins, bières, alcools",8,train
+champagne rosé,"Vins, bières, alcools",8,train
+champignons,"Fruits, légumes",5,train
+chantilly,"Produits laitiers, oeufs, fromages",11,test
+charcuterie apéritive,"Charcuterie, traiteur",9,train
+charcuterie en tranche,"Charcuterie, traiteur",9,train
+charcuterie à la coupe,"Charcuterie, traiteur",9,train
+chewing-gums,Epicerie sucrée,7,train
+chicorée,Epicerie sucrée,7,train
+chips,Epicerie salée,6,train
+chocolat en poudre,Epicerie sucrée,7,test
+chorizos,Epicerie salée,6,train
+chorizos entiers,"Charcuterie, traiteur",9,train
+choux,"Fruits, légumes",5,train
+chutney,"Charcuterie, traiteur",9,train
+chèvre,"Produits laitiers, oeufs, fromages",11,train
+cidres,"Vins, bières, alcools",8,train
+cocktail sans alcool,"Vins, bières, alcools",8,train
+cocktails sans alcool,"Eaux, jus, soda, thés glacés",12,train
+cocktails à faire soi-même,"Vins, bières, alcools",8,train
+colas,"Eaux, jus, soda, thés glacés",12,train
+compotes,Epicerie sucrée,7,test
+comté,"Produits laitiers, oeufs, fromages",11,test
+concentrés,"Eaux, jus, soda, thés glacés",12,train
+concombres,"Fruits, légumes",5,train
+condiments,Epicerie salée,6,train
+confiseries au chocolat,Epicerie sucrée,7,train
+confitures,Epicerie sucrée,7,train
+conserves,Epicerie salée,6,train
+conserves de légumes,Epicerie salée,6,train
+conserves de poisson,Epicerie salée,6,test
+conserves de viande,Epicerie salée,6,train
+cookies,Epicerie sucrée,7,train
+cordons bleus,"Charcuterie, traiteur",9,train
+cornichons,Epicerie salée,6,test
+coulis,Surgelés,10,train
+coulommiers,"Produits laitiers, oeufs, fromages",11,train
+courges,"Fruits, légumes",5,train
+courgettes,"Fruits, légumes",5,test
+couscous,Epicerie salée,6,train
+crevettes,"Boucherie, volaille, poissonnerie",4,test
+croques monsieur,"Charcuterie, traiteur",9,train
+croûtons,Epicerie salée,6,train
+crustacés,Surgelés,10,train
+crèmes aux oeufs,"Produits laitiers, oeufs, fromages",11,train
+crèmes dessert,"Produits laitiers, oeufs, fromages",11,train
+crèmes fraiches,"Produits laitiers, oeufs, fromages",11,train
+crèmes glacées,Surgelés,10,test
+crêpes,Epicerie sucrée,7,train
+cubis,"Vins, bières, alcools",8,train
+cuisine du monde,Surgelés,10,train
+cuisine express,Epicerie salée,6,train
+cuisinés,Surgelés,10,train
+cuisses de grenouille,Surgelés,10,train
+cuisson express,Epicerie salée,6,train
+céréales,Epicerie sucrée,7,train
+cônes,Surgelés,10,train
+demi-bouteille,"Vins, bières, alcools",8,test
+demi-sec,"Vins, bières, alcools",8,test
+desserts pâtissiers,"Produits laitiers, oeufs, fromages",11,train
+desserts soja,"Produits laitiers, oeufs, fromages",11,train
+digestifs,"Vins, bières, alcools",8,train
+dinde,"Boucherie, volaille, poissonnerie",4,train
+diététique,Epicerie sucrée,7,train
+dosettes,Epicerie sucrée,7,train
+dosettes compatibles senseo,Epicerie sucrée,7,train
+dés,"Charcuterie, traiteur",9,train
+eaux aromatisées,"Eaux, jus, soda, thés glacés",12,train
+eaux gazeuses natures,"Eaux, jus, soda, thés glacés",12,train
+eaux petits formats,"Eaux, jus, soda, thés glacés",12,test
+eaux plates natures,"Eaux, jus, soda, thés glacés",12,train
+eaux pour bébés,"Eaux, jus, soda, thés glacés",12,train
+effervescents du monde,"Vins, bières, alcools",8,train
+effervescents sans alcool,"Vins, bières, alcools",8,train
+emmental,"Produits laitiers, oeufs, fromages",11,train
+endives,"Fruits, légumes",5,train
+enfants,"Eaux, jus, soda, thés glacés",12,test
+escargots,Surgelés,10,test
+farces,"Boucherie, volaille, poissonnerie",4,train
+farines,Epicerie sucrée,7,train
+fauxmage,"Produits laitiers, oeufs, fromages",11,train
+feuilletés,Surgelés,10,train
+filets,"Boucherie, volaille, poissonnerie",4,train
+filtres,Epicerie sucrée,7,test
+flammekueches,Surgelés,10,train
+flans,"Produits laitiers, oeufs, fromages",11,train
+foie gras,Epicerie salée,6,train
+fougasses,"Charcuterie, traiteur",9,test
+fraises,"Fruits, légumes",5,train
+frites au four,Surgelés,10,train
+frites micro ondes,Surgelés,10,train
+frites pour friteuses,Surgelés,10,train
+fromage à salade,"Produits laitiers, oeufs, fromages",11,test
+fromages apéritifs,"Charcuterie, traiteur",9,train
+fromages blancs,"Produits laitiers, oeufs, fromages",11,train
+fromages en tranches,"Produits laitiers, oeufs, fromages",11,test
+fromages enfant,"Produits laitiers, oeufs, fromages",11,train
+fromages pour l'apéritif,"Produits laitiers, oeufs, fromages",11,train
+fromages râpés,"Produits laitiers, oeufs, fromages",11,train
+fromages à fondre,"Produits laitiers, oeufs, fromages",11,test
+fromages à la coupe,"Produits laitiers, oeufs, fromages",11,train
+fromages à tartiner,"Produits laitiers, oeufs, fromages",11,train
+fruits,"Fruits, légumes",5,train
+fruits au sirop,Epicerie sucrée,7,train
+fruits bio,"Fruits, légumes",5,train
+fruits de saison,"Fruits, légumes",5,train
+fruits du verger,"Eaux, jus, soda, thés glacés",12,train
+fruits exotiques,"Fruits, légumes",5,train
+fruits rouges,"Fruits, légumes",5,test
+fruits secs,"Fruits, légumes",5,test
+fruits à coque,"Fruits, légumes",5,test
+fruits à noyaux,"Fruits, légumes",5,test
+fruitées,"Eaux, jus, soda, thés glacés",12,train
+vins fruités,"Vins, bières, alcools",8,train
+fêta,"Produits laitiers, oeufs, fromages",11,train
+fûts de bières,"Vins, bières, alcools",8,train
+galettes,"Charcuterie, traiteur",9,test
+gaufres,Epicerie sucrée,7,train
+gazpacho,"Eaux, jus, soda, thés glacés",12,train
+gin,"Vins, bières, alcools",8,test
+glaçons,Surgelés,10,train
+gnocchi,"Charcuterie, traiteur",9,test
+gouda,"Produits laitiers, oeufs, fromages",11,train
+goûters pocket,Epicerie sucrée,7,train
+graines,"Fruits, légumes",5,train
+gratins,Surgelés,10,train
+grignottes,"Boucherie, volaille, poissonnerie",4,train
+grillades,"Boucherie, volaille, poissonnerie",4,train
+grillades de volaille,"Boucherie, volaille, poissonnerie",4,test
+gâteaux au chocolat,Epicerie sucrée,7,train
+gâteaux aux fruits,Epicerie sucrée,7,train
+gésiers,"Boucherie, volaille, poissonnerie",4,train
+hachés,"Boucherie, volaille, poissonnerie",4,test
+herbes,Epicerie salée,6,train
+herbes aromatiques,"Fruits, légumes",5,train
+huiles,Epicerie salée,6,train
+huîtres,"Boucherie, volaille, poissonnerie",4,train
+infusions,Epicerie sucrée,7,train
+infusions glacées,"Eaux, jus, soda, thés glacés",12,train
+instantanées,Epicerie salée,6,train
+italiens,"Produits laitiers, oeufs, fromages",11,train
+jambon blanc,"Charcuterie, traiteur",9,train
+jambon cru,"Charcuterie, traiteur",9,train
+jambon de volaille,"Charcuterie, traiteur",9,train
+jus d'agrumes,"Eaux, jus, soda, thés glacés",12,train
+jus d'ananas,"Eaux, jus, soda, thés glacés",12,train
+jus d'orange,"Eaux, jus, soda, thés glacés",12,train
+jus de fruits frais,"Eaux, jus, soda, thés glacés",12,train
+jus de légumes,"Eaux, jus, soda, thés glacés",12,train
+jus de pomme,"Eaux, jus, soda, thés glacés",12,train
+jus multifruits,"Eaux, jus, soda, thés glacés",12,train
+jus petits formats,"Eaux, jus, soda, thés glacés",12,train
+ketchups,Epicerie salée,6,train
+kiwis,"Fruits, légumes",5,train
+knacks,"Charcuterie, traiteur",9,train
+labellisée,"Boucherie, volaille, poissonnerie",4,train
+lait,"Eaux, jus, soda, thés glacés",12,train
+laits,"Produits laitiers, oeufs, fromages",11,test
+lapin,"Boucherie, volaille, poissonnerie",4,test
+lardons,"Charcuterie, traiteur",9,test
+limes,"Eaux, jus, soda, thés glacés",12,train
+limonades,"Eaux, jus, soda, thés glacés",12,test
+liégeois,"Produits laitiers, oeufs, fromages",11,test
+légumes,"Charcuterie, traiteur",9,train
+légumes anciens,"Fruits, légumes",5,train
+légumes apéritifs,"Fruits, légumes",5,test
+légumes bio,"Fruits, légumes",5,train
+légumes cuisinés,Surgelés,10,train
+légumes de saison,"Fruits, légumes",5,train
+légumes exotiques,"Fruits, légumes",5,train
+légumes nature,Surgelés,10,train
+légumes pré-découpés,"Fruits, légumes",5,train
+légumes prêt à consommer,"Fruits, légumes",5,train
+légumes secs,Epicerie salée,6,train
+légumes secs bio,"Fruits, légumes",5,train
+légumes verts,"Fruits, légumes",5,train
+légumineuses,"Charcuterie, traiteur",9,train
+madeleines,Epicerie sucrée,7,test
+magnum,"Vins, bières, alcools",8,train
+margarines,"Produits laitiers, oeufs, fromages",11,train
+marée du jour,"Boucherie, volaille, poissonnerie",4,train
+mascarpone,"Produits laitiers, oeufs, fromages",11,train
+mayonnaises,Epicerie salée,6,train
+melons,"Fruits, légumes",5,train
+miels,Epicerie sucrée,7,train
+mini-bâtonnets,Surgelés,10,test
+mini-pots,Surgelés,10,test
+mollusques,Surgelés,10,train
+moules,"Boucherie, volaille, poissonnerie",4,train
+mousses,"Produits laitiers, oeufs, fromages",11,train
+mozzarella,"Produits laitiers, oeufs, fromages",11,train
+mélanges,Epicerie salée,6,train
+mélanges de légumes,Surgelés,10,train
+navets,"Fruits, légumes",5,train
+navettes,"Charcuterie, traiteur",9,test
+nems,"Charcuterie, traiteur",9,train
+nuggets,"Boucherie, volaille, poissonnerie",4,train
+oeufs,"Produits laitiers, oeufs, fromages",11,train
+oignons,"Fruits, légumes",5,train
+olives,Epicerie salée,6,train
+pain d'épices,"Charcuterie, traiteur",9,train
+pains au lait,Epicerie sucrée,7,train
+pains de mie,Epicerie sucrée,7,train
+pains frais,Epicerie sucrée,7,train
+panachés,"Vins, bières, alcools",8,train
+panés,"Boucherie, volaille, poissonnerie",4,train
+pastis,"Vins, bières, alcools",8,train
+pastèques,"Fruits, légumes",5,train
+pavés de poisson,"Boucherie, volaille, poissonnerie",4,test
+petits fours,Surgelés,10,train
+petits pots de crème,"Produits laitiers, oeufs, fromages",11,train
+petits suisses,"Produits laitiers, oeufs, fromages",11,train
+pistaches,Epicerie salée,6,train
+pizzas,Surgelés,10,train
+plateaux de fromages,"Produits laitiers, oeufs, fromages",11,train
+plats cuisinés,"Charcuterie, traiteur",9,train
+plats préparés,"Boucherie, volaille, poissonnerie",4,test
+plats préparés par votre traiteur,"Charcuterie, traiteur",9,test
+plats végétariens,Epicerie salée,6,train
+poireaux,"Fruits, légumes",5,train
+poires,"Fruits, légumes",5,train
+poissons nature,Surgelés,10,train
+poissons panés,"Boucherie, volaille, poissonnerie",4,train
+poivre,Epicerie salée,6,train
+poivrons,"Fruits, légumes",5,train
+pomme de terre,"Fruits, légumes",5,train
+pommes,"Fruits, légumes",5,train
+pommes noisettes,Surgelés,10,train
+pop-corn,Epicerie sucrée,7,train
+porc,"Boucherie, volaille, poissonnerie",4,train
+potatoes,Surgelés,10,test
+pots,Surgelés,10,train
+poulet,"Boucherie, volaille, poissonnerie",4,train
+produits diététiques,Epicerie sucrée,7,test
+produits festifs,Surgelés,10,train
+prosecco,"Vins, bières, alcools",8,train
+préfous,"Charcuterie, traiteur",9,train
+préparations pour desserts,Epicerie sucrée,7,train
+purée,Epicerie salée,6,train
+purées,Surgelés,10,train
+pâtes,Epicerie salée,6,train
+pâtes fraiches,"Charcuterie, traiteur",9,train
+pâtes à tartes,"Charcuterie, traiteur",9,train
+pâtes à tartiner,Epicerie sucrée,7,train
+pâtisseries,Surgelés,10,train
+pétillants sans alcool,"Eaux, jus, soda, thés glacés",12,train
+quatre-quart,Epicerie sucrée,7,train
+quenelles,"Charcuterie, traiteur",9,train
+quiches,"Charcuterie, traiteur",9,train
+raclette,"Produits laitiers, oeufs, fromages",11,train
+radis,"Fruits, légumes",5,train
+raisin,"Eaux, jus, soda, thés glacés",12,train
+raisins,"Fruits, légumes",5,train
+rhums,"Vins, bières, alcools",8,test
+rillettes,"Charcuterie, traiteur",9,train
+riz,Epicerie salée,6,train
+riz au lait,"Produits laitiers, oeufs, fromages",11,train
+riz cantonais,"Charcuterie, traiteur",9,train
+roquefort,"Produits laitiers, oeufs, fromages",11,train
+rôti,"Charcuterie, traiteur",9,train
+röstis,Surgelés,10,train
+sablés,Epicerie sucrée,7,train
+salades,"Fruits, légumes",5,train
+salades composées,"Charcuterie, traiteur",9,train
+salades de crudités,"Charcuterie, traiteur",9,train
+salades en sachet,"Fruits, légumes",5,train
+salades en sachet bio,"Fruits, légumes",5,test
+sandwich,"Charcuterie, traiteur",9,train
+sauce crudités,Epicerie salée,6,train
+sauces,"Boucherie, volaille, poissonnerie",4,train
+sauces chaudes,Epicerie salée,6,train
+sauces froides,Epicerie salée,6,train
+sauces tomate,Epicerie salée,6,train
+saucisses,"Charcuterie, traiteur",9,test
+saucissons,"Charcuterie, traiteur",9,train
+saumon,"Boucherie, volaille, poissonnerie",4,train
+saumons,"Boucherie, volaille, poissonnerie",4,train
+sel,Epicerie salée,6,train
+semoule,Epicerie salée,6,train
+simili-carnés,"Charcuterie, traiteur",9,train
+sirops,"Eaux, jus, soda, thés glacés",12,train
+skyr,"Produits laitiers, oeufs, fromages",11,train
+smoothies,"Eaux, jus, soda, thés glacés",12,test
+sorbets,Surgelés,10,train
+soupes deshydratées,Epicerie salée,6,test
+soupes et sauces pour poisson,"Boucherie, volaille, poissonnerie",4,train
+soupes fraîches,"Fruits, légumes",5,train
+soupes liquides,Epicerie salée,6,train
+spécialités asiatiques,Epicerie salée,6,train
+spécialités tex mex,Epicerie salée,6,train
+steaks,Surgelés,10,train
+steaks hachés,"Boucherie, volaille, poissonnerie",4,train
+sucres,Epicerie sucrée,7,train
+surimi,"Boucherie, volaille, poissonnerie",4,train
+sushis,"Boucherie, volaille, poissonnerie",4,train
+sélection du traiteur,"Charcuterie, traiteur",9,train
+tablettes de chocolat,Epicerie sucrée,7,train
+taboulés,"Charcuterie, traiteur",9,train
+tapas,"Charcuterie, traiteur",9,train
+tapenades,Epicerie salée,6,train
+tartes,Surgelés,10,train
+tartiflette,"Produits laitiers, oeufs, fromages",11,train
+tartinables,Epicerie salée,6,train
+tequila,"Vins, bières, alcools",8,train
+thés,Epicerie sucrée,7,train
+thés glacés,"Eaux, jus, soda, thés glacés",12,train
+toasts,"Charcuterie, traiteur",9,test
+tofu,"Charcuterie, traiteur",9,test
+tomates,"Fruits, légumes",5,train
+tonic,"Eaux, jus, soda, thés glacés",12,test
+tortillas,Epicerie salée,6,train
+truite fumés,"Boucherie, volaille, poissonnerie",4,train
+truites fumés,"Boucherie, volaille, poissonnerie",4,train
+tuiles,Epicerie salée,6,train
+vanille,Epicerie sucrée,7,train
+veau,"Boucherie, volaille, poissonnerie",4,train
+viandes cuisinées,"Boucherie, volaille, poissonnerie",4,test
+viennoiseries,Epicerie sucrée,7,train
+vinaigres,Epicerie salée,6,test
+vins,"Eaux, jus, soda, thés glacés",12,train
+vins blancs,"Vins, bières, alcools",8,train
+vins effervescents,"Vins, bières, alcools",8,train
+vins rosés,"Vins, bières, alcools",8,train
+vins rouges,"Vins, bières, alcools",8,train
+vins sans alcool,"Vins, bières, alcools",8,train
+vodka,"Vins, bières, alcools",8,test
+volaille bio,"Boucherie, volaille, poissonnerie",4,train
+volailles,Surgelés,10,train
+végétal,"Produits laitiers, oeufs, fromages",11,train
+whisky,"Vins, bières, alcools",8,test
+yaourts allégés,"Produits laitiers, oeufs, fromages",11,train
+yaourts aromatisés,"Produits laitiers, oeufs, fromages",11,test
+yaourts aux fruits,"Produits laitiers, oeufs, fromages",11,train
+yaourts chèvre,"Produits laitiers, oeufs, fromages",11,train
+yaourts enfant,"Produits laitiers, oeufs, fromages",11,train
+yaourts nature,"Produits laitiers, oeufs, fromages",11,train
+yaourts à boire,"Produits laitiers, oeufs, fromages",11,test
+à la grecque,"Produits laitiers, oeufs, fromages",11,train
+à pizzas,"Charcuterie, traiteur",9,test
+échalotes,"Fruits, légumes",5,test
+édulcorants,Epicerie sucrée,7,train
+émincés,"Charcuterie, traiteur",9,train
+épices,Epicerie salée,6,train
