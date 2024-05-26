@@ -138,7 +138,7 @@ def mistral_create_csv(input):
             role="user",
             content=(
                 f'Organize this shopping list in a CSV file with columns: Item, Amount, Unit. '
-                f'Write it so I can open it in pandas later, so no additional text or comments, never. {input}'
+                f'Write it so I can open it in pandas later, so no additional text or comments. \n {input}'
             )
         )]
     )
@@ -156,7 +156,7 @@ def create_csv(input_text):
     csv_content = mistral_create_csv(input_text)
     string_data = StringIO(csv_content)
     df = pd.read_csv(string_data)
-    
+    print(df)
     df['Amount'] = df['Amount'].fillna('1').astype(str).apply(extract_first_number)
     df['Unit'] = df['Unit'].fillna('pcs')
     df['Section'] = None

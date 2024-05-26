@@ -23,21 +23,21 @@ st.markdown("""
 # Display logo
 st.image('logo_or_on_wh.png', width=150)
 
-placeholder_text = """* potatoes - 4 pcs.
-* carrot - 1 pc.
-* eggs - 7 pcs.
-* sausage - 300 grams
-* pickled cucumbers - 4 pieces
-* canned green peas - 200 g.
-* Mayonnaise - 3 tbsp.
-* Herring - 1 pc. 
-* beet - 250 g
-* potatoes - 200 g
-* carrots - 150 g
-* Mayonnaise - 10 g
-* cheese - 90 g
+placeholder_text = """* potatoes - 4 pcs
+* carrot - 1 pcs
+* eggs - 7 pcs
+* sausage - 300 gr
+* pickled cucumbers - 4 pcs
+* canned green peas - 200 gr
+* Mayonnaise - 3
+* Herring - 1 pcs 
+* beet - 250 gr
+* potatoes - 200 gr
+* carrots - 150 gr
+* Mayonnaise - 2
+* cheese - 90 gr
 * Egg - 2 pcs 
-* Mayonnaise - 2 tbsp. 
+* Mayonnaise - 2 
 """
 
 
@@ -48,13 +48,12 @@ submit_button = form.form_submit_button(label='Make shopping list')
 
 # Initialize session state for data DataFrame and button click count
 if 'data_df' not in st.session_state and submit_button:
-    try:
-        if len(input_list) == 0:
-            input_list = placeholder_text
-        data_df = create_csv(input_list)
-        st.session_state['data_df'] = data_df
-    except Exception as e:
-        st.error(f"Error creating shopping list: {e}")
+    if len(input_list) == 0:
+        input_list = placeholder_text
+    data_df = create_csv(input_list)
+    st.session_state['data_df'] = data_df
+
+
 
 if 'organize_click_count' not in st.session_state:
     st.session_state.organize_click_count = 0
