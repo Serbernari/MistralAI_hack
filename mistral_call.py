@@ -1,4 +1,5 @@
 import re
+import requests
 import streamlit as st
 import pandas as pd
 from io import StringIO
@@ -63,6 +64,14 @@ def mistral_compare(text):
     )
     return chat_response.choices[0].message.content
 
+def get_clusters_custom_model(data_df):
+    """Call custom trained model to group items by sections"""
+    grocerylist = data_df['Item'].tolist()
+    url = 'http://195.242.25.109:5000/cluster'
+    data = {'grocerylist':grocerylist}
+    response=requests.post(url, json=data)
+    return response.json()['clusters']
+
 def mistral_compare_items(data_df):
     """Compares items in a DataFrame and merges similar items."""
     input_list = []
@@ -115,7 +124,11 @@ def mistral_compare_items(data_df):
                 data_df.loc[j, 'Item'] = None
 
     # Remove rows where 'Item' is None
-    return data_df.dropna(subset=['Item'])
+    data_df = data_df.dropna(subset=['Item'])
+    
+    data_df['Section'] = get_clusters_custom_model(data_df)
+    data_df = data_df.sort_values(by=['Section', "Item"])
+    return data_df
 
 def mistral_create_csv(input):
     """Creates a CSV from the input text."""
@@ -146,6 +159,7 @@ def create_csv(input_text):
     
     df['Amount'] = df['Amount'].fillna('1').astype(str).apply(extract_first_number)
     df['Unit'] = df['Unit'].fillna('pcs')
+    df['Section'] = None
     df['Done'] = False
     
     return df

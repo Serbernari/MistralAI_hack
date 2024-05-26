@@ -23,25 +23,21 @@ st.markdown("""
 # Display logo
 st.image('logo_or_on_wh.png', width=150)
 
-placeholder_text = """✓ Avocate
- ✓ 350 g d' oignon
- ✓ cucumber
- ✓ 350 g de poivron rouge
- ✓ 350 g de courgette
- ✓ 500 g de tomate
- ✓ arugula
- ✓ iceberg lettuce
- ✓ small tomatoes
- ✓ cooked chickpeas in a can
- ✓ tomato paste 500 ml
- ✓ canned corn 
- ✓ canned red beans 
- ✓ Onion 150 g 
- ✓ Canned tuna
- ✓ Chedar cheese
- ✓ сыр пармезан тертый 
- ✓ Chicken 1 kg 
- ✓ Tuna can 1
+placeholder_text = """* potatoes - 4 pcs.
+* carrot - 1 pc.
+* eggs - 7 pcs.
+* sausage - 300 grams
+* pickled cucumbers - 4 pieces
+* canned green peas - 200 g.
+* Mayonnaise - 3 tbsp.
+* Herring - 1 pc. 
+* beet - 250 g
+* potatoes - 200 g
+* carrots - 150 g
+* Mayonnaise - 10 g
+* cheese - 90 g
+* Egg - 2 pcs 
+* Mayonnaise - 2 tbsp. 
 """
 
 
@@ -100,7 +96,7 @@ with col2:
                     default=False,
                 )
             },
-            disabled=["Item", "Amount", "Unit"],
+            disabled=["Item", "Amount", "Unit", "Section"],
             hide_index=True,
             on_change=on_rows_change
         )
