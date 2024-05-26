@@ -5,17 +5,56 @@ from mistral_call import mistral_compare_items, create_csv
 # Set page configuration
 st.set_page_config(page_title="ReMi", page_icon="🐭", layout="centered")
 
+# Custom CSS to style the background of the table
+st.markdown("""
+    <style>
+    .center-table {
+        display: flex;
+        justify-content: center;
+    }
+    .table-background {
+        background-color: #f0f0f0; /* Change this color as needed */
+        padding: 20px;
+        border-radius: 10px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # Display logo
 st.image('logo_or_on_wh.png', width=150)
 
+placeholder_text = """✓ Avocate
+ ✓ 350 g d' oignon
+ ✓ cucumber
+ ✓ 350 g de poivron rouge
+ ✓ 350 g de courgette
+ ✓ 500 g de tomate
+ ✓ arugula
+ ✓ iceberg lettuce
+ ✓ small tomatoes
+ ✓ cooked chickpeas in a can
+ ✓ tomato paste 500 ml
+ ✓ canned corn 
+ ✓ canned red beans 
+ ✓ Onion 150 g 
+ ✓ Canned tuna
+ ✓ Chedar cheese
+ ✓ сыр пармезан тертый 
+ ✓ Chicken 1 kg 
+ ✓ Tuna can 1
+"""
+
+
 # Form for input list
 form = st.form(key='my_form')
-input_list = form.text_area(label="Insert your list here!")
+input_list = form.text_area(label="Insert your list here!", placeholder=placeholder_text)
 submit_button = form.form_submit_button(label='Make shopping list')
 
 # Initialize session state for data DataFrame and button click count
 if 'data_df' not in st.session_state and submit_button:
     try:
+        if len(input_list) == 0:
+            input_list = placeholder_text
         data_df = create_csv(input_list)
         st.session_state['data_df'] = data_df
     except Exception as e:
@@ -47,6 +86,8 @@ generation = st.session_state.setdefault("generation", 0)
 prev_key = f"data.{generation-1}"
 
 col1, col2, col3 = st.columns([1, 20, 1])
+# Wrap the data editor in a centered div with a background
+st.markdown('<div class="center-table"><div class="table-background">', unsafe_allow_html=True)
 with col2:
     if prev_key in st.session_state:
         pass
@@ -65,6 +106,7 @@ with col2:
         )
     except KeyError:
         pass
+st.markdown('</div></div>', unsafe_allow_html=True)
 
 st.divider()
 
@@ -81,6 +123,6 @@ with col3:
             st.session_state.balloons_shown = True
 
 st.markdown("<div style='text-align: center; margin-top: 50px;'>"
-            "<img src='https://example.com/remi.png' alt='Remi' width='100' height='100'>"
+            "<p>Remi</p>"
             "<p>Enjoy your shopping list!</p>"
             "</div>", unsafe_allow_html=True)

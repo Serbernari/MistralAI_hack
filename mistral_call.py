@@ -125,7 +125,7 @@ def mistral_create_csv(input):
             role="user",
             content=(
                 f'Organize this shopping list in a CSV file with columns: Item, Amount, Unit. '
-                f'Write it so I can open it in pandas later, so no additional text or comments. {input}'
+                f'Write it so I can open it in pandas later, so no additional text or comments, never. {input}'
             )
         )]
     )
